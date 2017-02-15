@@ -1,7 +1,9 @@
 options:
   formatter: stylish
 files:
-  include: '**/*.vue'
+  include:
+    - '**/*.s+(a|c)ss'
+    - '**/*.vue'
 rules:
   # Extends
   extends-before-mixins: 1
