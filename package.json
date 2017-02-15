@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-11704-14440-1rubehl/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-11704-14440-1rubehl/package.tgz",
+        "spec": "/tmp/d-11704-14440-1rubehl/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-11704-14440-u6ihxb"
+    ]
+  ],
+  "_from": "../d-11704-14440-1rubehl/package.tgz",
+  "_id": "lint-sass-vue@1.7.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/lint-sass-vue",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-11704-14440-1rubehl/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-11704-14440-1rubehl/package.tgz",
+    "spec": "/tmp/d-11704-14440-1rubehl/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11704-14440-1rubehl/package.tgz",
+  "_shasum": "343e8be0884e3335e8d4c228dec3d07ab33618ce",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-11704-14440-1rubehl/package.tgz",
+  "_where": "/tmp/apm-install-dir-11704-14440-u6ihxb",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/lint-sass-vue/issues"
+  },
+  "dependencies": {
+    "atom-linter": "^8.0.0",
+    "atom-package-deps": "4.3.1",
+    "cheerio": "^0.22.0",
+    "consistent-env": "^1.0.1",
+    "globule": "^1.0.0",
+    "htmlparser2": "^3.9.2",
+    "sass-lint": "1.10.2"
+  },
+  "description": "Atom Linter plugin to lint your Sass/SCSS with pure node sass-lint",
+  "devDependencies": {
+    "coffeelint": "^1.14.2",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-plugin-import": "^1.16.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "es6": true,
+      "node": true
+    }
+  },
+  "homepage": "https://github.com/AtomLinter/lint-sass-vue#readme",
+  "keywords": [
+    "Sass",
+    "scss",
+    "sass-lint",
+    "node-sass",
+    "linter"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "lint-sass-vue",
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.1.0": "provideLinter"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/lint-sass-vue.git"
+  },
+  "scripts": {
+    "lint": "coffeelint lib && eslint spec"
+  },
+  "version": "1.7.4"
+}
