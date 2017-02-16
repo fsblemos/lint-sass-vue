@@ -37,7 +37,7 @@
   "_spec": "/tmp/d-11704-14440-1rubehl/package.tgz",
   "_where": "/tmp/apm-install-dir-11704-14440-u6ihxb",
   "bugs": {
-    "url": "https://github.com/AtomLinter/lint-sass-vue/issues"
+    "url": "https://github.com/fsblemos/lint-sass-vue/issues"
   },
   "dependencies": {
     "atom-linter": "^8.0.0",
@@ -48,7 +48,7 @@
     "htmlparser2": "^3.9.2",
     "sass-lint": "1.10.2"
   },
-  "description": "Atom Linter plugin to lint your Sass/SCSS with pure node sass-lint",
+  "description": "Plugin to lint your Sass/SCSS inside .vue files!",
   "devDependencies": {
     "coffeelint": "^1.14.2",
     "eslint": "^3.7.1",
@@ -68,11 +68,12 @@
       "node": true
     }
   },
-  "homepage": "https://github.com/AtomLinter/lint-sass-vue#readme",
+  "homepage": "https://github.com/fsblemos/lint-sass-vue#readme",
   "keywords": [
-    "Sass",
+    "vue",
     "scss",
     "sass-lint",
+    "Sass",
     "node-sass",
     "linter"
   ],
@@ -92,7 +93,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AtomLinter/lint-sass-vue.git"
+    "url": "git+https://github.com/fsblemos/lint-sass-vue.git"
   },
   "scripts": {
     "lint": "coffeelint lib && eslint spec"

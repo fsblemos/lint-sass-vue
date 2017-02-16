@@ -151,7 +151,7 @@ module.exports =
             for template in fileTemplates
               res = linter.lintText({
                 text: template.content,
-                format: 'scss',
+                format: template.format,
                 filename: filePath
               }, {}, config)
 
