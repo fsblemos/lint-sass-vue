@@ -22,7 +22,7 @@ It will parse **.vue** files with style tags in scss or sass language:
 
 #### Plugin installation
 
-`apm install fsblemos/sass-lint-vue`
+`apm install sass-lint-vue`
 
 #### .sass-lint.yml
 
