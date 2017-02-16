@@ -149,12 +149,21 @@ module.exports =
             fileTemplates = parse(editor.getText())
 
             for template in fileTemplates
-              result = linter.lintText({
+              res = linter.lintText({
                 text: template.content,
                 format: 'scss',
                 filename: filePath
               }, {}, config)
-              result.lineOffset = template.lineOffset
+
+              res.messages.map (msg) ->
+                msg.lineOffset = template.lineOffset
+
+              if result
+                result.errorCount = result.errorCount + res.errorCount
+                result.warningCount = result.warningCount + res.warningCount
+                result.messages = result.messages.concat(res.messages)
+              else
+                result = Object.assign({}, res)
         catch error
           messages = []
           match = error.message.match /Parsing error at [^:]+: (.*) starting from line #(\d+)/
@@ -182,7 +191,7 @@ module.exports =
           return []
 
         if result then return result.messages.map (msg) ->
-          line = if msg.line then msg.line - 1 + result.lineOffset else 0
+          line = if msg.line then msg.line - 1 + msg.lineOffset else 0
           col = if msg.column then msg.column - 1 else 0
           text = if msg.message then ' ' + msg.message else 'Unknown Error'
           ruleHref = helpers.getRuleURI(msg.ruleId)
