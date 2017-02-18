@@ -1,6 +1,6 @@
 This linter plugin is a fork of [AtomLinter/linter-sass-lint](https://github.com/AtomLinter/linter-sass-lint) that provides an interface to [sass-lint](https://github.com/sasstools/sass-lint) for [Vue.js](https://vuejs.org).
 
-It will parse **.vue** files with style tags in scss or sass language:
+It will parse **.vue** files with style tags and works form Sass or SCSS:
 
 ```html
 <template>
@@ -28,7 +28,7 @@ It will parse **.vue** files with style tags in scss or sass language:
 
 A .sass-lint.yml config file is required for this linter. You can find an example of one [here](https://github.com/fsblemos/lint-sass-vue/blob/master/.sass-lint.yml).
 
-If you already have a `.sass-lint.yml` file, make sure there is the pattern `'**/*.vue'` in the `include` property.
+**If you already have a `.sass-lint.yml` file, make sure there is the pattern** `'**/*.vue'` **in the `include` property.**
 
 By default this plugin will search up the directory tree for this file, you can also specify a path to this config file in the plugin settings or in `~/.atom/config.cson` file. Usually you would place this config file in your projects root and keep it under version control too.
 
