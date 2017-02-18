@@ -98,5 +98,5 @@
   "scripts": {
     "lint": "coffeelint lib && eslint spec"
   },
-  "version": "1.8.0"
+  "version": "1.0.1"
 }
