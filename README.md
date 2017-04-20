@@ -1,6 +1,6 @@
 This linter plugin is a fork of [AtomLinter/linter-sass-lint](https://github.com/AtomLinter/linter-sass-lint) that provides an interface to [sass-lint](https://github.com/sasstools/sass-lint) for [Vue.js](https://vuejs.org).
 
-It will parse **.vue** files with style tags and works form Sass or SCSS:
+It will parse **.vue** files with style tags and works for Sass or SCSS:
 
 ```html
 <template>
@@ -22,7 +22,7 @@ It will parse **.vue** files with style tags and works form Sass or SCSS:
 
 #### Plugin installation
 
-`apm install sass-lint-vue`
+`apm install lint-sass-vue`
 
 #### .sass-lint.yml
 
